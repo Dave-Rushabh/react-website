@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.services-container {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 90%;
+  background-color: #6290c3;
+  margin: auto;
+}
+
+.title-services {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: bolder;
+  color: white;
+}
+
+.main {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* border-color: #6290c3;
+  border-style: solid; */
+  justify-content: space-evenly;
+  background-color: white;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  /* margin-left: 25px; */
+}
+
+.accordion-main {
+  width: 85%;
+  margin: auto;
+  border-color: #6290c3;
+  border-style: solid;
+  margin-bottom: 100px;
+}
+
+.accordion-body {
+  font-size: 18px;
+}
+
+.accordion-button {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card {
+  width: 85%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* border-color: #6290c3;
+  border-style: solid; */
+}
+
+.card-body {
+  width: 100%;
+  background-color: #f9c74f;
+}
+
+.card-img {
+  height: 300px;
+  width: 100%;
+  border-color: #6290c3;
+  border-style: solid;
+}
+
+.card-title {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+
+  .services-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+
+  .accordion-main {
+    width: 90%;
+  }
+
+  .card {
+    width: 95%;
+  }
+}
